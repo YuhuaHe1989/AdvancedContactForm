@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title NewContact
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet')
+    link(href='css/addct.css' rel='stylesheet')
+  body
+    .container
+      .row
+        .col-xs-12 
+          h3 New Contact
+      .row
+        .col-xs-12
+          | Name:  
+          input.name(type='text')
+      .row
+        .col-xs-12
+          | E-mail:
+          input.email(type='text')
+      .row
+        .col-xs-12
+          | Phone:
+          input.phone(type='text')
+      .row
+        .col-xs-12
+          | Address:
+          input.address(type='text')
+      .row
+        .col-xs-12
+          input.submit(type='submit')
+          a(href='/')
+            input.return(type='submit' value='Return')
+
+
+  script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+  script(src='js/addct.js')
