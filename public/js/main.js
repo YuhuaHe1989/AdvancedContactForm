@@ -35,6 +35,7 @@ function modalUpdate(){
     data[editIndex].address = $modalAddress;
     $('#sample:nth-child('+(editIndex + 1)+')').find('.address').text($modalAddress);
     }
+    debugger
 
 
     $.post('/edit',{edit:data})
